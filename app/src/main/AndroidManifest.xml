@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aar.android.bookexchange">
+
+    <!--These three permissions are for accessing image-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyDkgHdjS2YppHAdtOdMSvWpzlcpj4-hK0Y"/>
+        <activity android:name="com.aar.android.bookexchange.BuySell">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name="com.aar.android.bookexchange.UserProfile"
+            android:label="@string/app_name"
+            android:parentActivityName="com.aar.android.bookexchange.BuySell">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aar.android.bookexchange.BuySell"/>
+        </activity>
+
+
+        <activity
+            android:name="com.aar.android.bookexchange.ShowBookList"
+            android:label="@string/app_name"
+            android:parentActivityName="com.aar.android.bookexchange.BuySell">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aar.android.bookexchange.BuySell"/>
+        </activity>
+
+
+
+        <activity
+            android:name="com.aar.android.bookexchange.Advertise"
+            android:label="@string/app_name"
+            android:parentActivityName="com.aar.android.bookexchange.ShowBookList">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aar.android.bookexchange.ShowBookList"/>
+        </activity>
+
+
+
+        <activity
+            android:name="com.aar.android.bookexchange.CompleteOrder"
+            android:label="@string/app_name"
+            android:parentActivityName="com.aar.android.bookexchange.Advertise">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aar.android.bookexchange.Advertise"/>
+        </activity>
+
+
+        <activity
+            android:name="com.aar.android.bookexchange.SellingForm"
+            android:label="@string/app_name"
+            android:parentActivityName="com.aar.android.bookexchange.BuySell">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aar.android.bookexchange.BuySell"/>
+        </activity>
+
+
+        <activity
+            android:name="com.aar.android.bookexchange.SearchBarActivity"
+            android:label="@string/app_name"
+            android:parentActivityName="com.aar.android.bookexchange.ShowBookList">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aar.android.bookexchange.BuySell"/>
+        </activity>
+
+        <activity
+            android:name="com.aar.android.bookexchange.ShowMyBookList"
+            android:label="@string/app_name"
+            android:parentActivityName="com.aar.android.bookexchange.UserProfile">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aar.android.bookexchange.BuySell"/>
+        </activity>
+
+        <activity
+            android:name="com.aar.android.bookexchange.EditProfile"
+            android:label="@string/app_name"
+            android:parentActivityName="com.aar.android.bookexchange.UserProfile">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aar.android.bookexchange.BuySell"/>
+        </activity>
+
+        <activity
+            android:name="com.aar.android.bookexchange.EditMyBook"
+            android:label="@string/app_name"
+            android:parentActivityName="com.aar.android.bookexchange.Advertise">
+            <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aar.android.bookexchange.BuySell"/>
+        </activity>
+
+
+        <provider
+            android:name="com.aar.android.bookexchange.data.BookProvider"
+            android:authorities="com.aar.android.bookexchange"
+            android:exported="false" />
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "552246095988",
+    "firebase_url": "https://book-exchange-46609.firebaseio.com",
+    "project_id": "book-exchange-46609",
+    "storage_bucket": "book-exchange-46609.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552246095988:android:0fa54c807f2cce641ba121",
+        "android_client_info": {
+          "package_name": "com.aar.android.bookexchange"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "552246095988-m758m98djb5gi3onprurgn0014q4652r.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aar.android.bookexchange",
+            "certificate_hash": "b35738ff3c3bc3267b11deb4e24cfabac2dfae64"
+          }
+        },
+        {
+          "client_id": "552246095988-4bog5pfcdji26rd877f5t5475f23muc9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAE5NafypPec0Nk1McH1gFDqKPNp8x0xTE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "552246095988-4bog5pfcdji26rd877f5t5475f23muc9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
